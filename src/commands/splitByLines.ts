@@ -52,12 +52,11 @@ export default function divideByLines(
 				for (let i = firstLineNum; i <= lastLineNum; i += step) {
 					lineNumbers.push(i);
 				}
-				lineNumbers.push(lastLineNum);
 				
 				tEditor.selections = getSelectionsByLines(doc, lineNumbers);
 			}
 		} else {
-			vsc.window.showWarningMessage("Fail!");
+			vsc.window.showWarningMessage("You need to select a fev lines or put a fev cursors to different lines.");
 		}
 	});
 }

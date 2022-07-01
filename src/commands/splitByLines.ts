@@ -19,7 +19,7 @@ export default function divideByLines(
 				acc.push(v.start.line);
 				acc.push(v.end.line);
 				return acc;
-			}, new Array).sort(),
+			}, new Array).sort((a,b) => a < b ? -1: a > b ? 1 : 0),
 			[firstLineNum, lastLineNum] = [positions[0], positions[positions.length - 1]],
 			commonLineCount = lastLineNum - firstLineNum + 1,
 			commonCursorCount = tEditor.selections.length;

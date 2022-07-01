@@ -29,11 +29,47 @@
 				"title": "Divide Selection: Divide By Lines"
 			}
 		],
-		
 		"menus": {
 			"editor/title": [
 				{"command": "divide-selection.divideByLines"}
 			]
+		},
+		"configuration": {
+			"title": "Divide Selection",
+			"properties": {
+				"divide-selection.selectLineFrom": {
+					"type": "string",
+					"default": "end-of-line",
+					"enum": [
+						"start-of-line",
+						"start-of-text",
+						"end-of-line",
+						"end-of-text"
+					],
+					"enumDescriptions": [
+						"Select lines from start of line.",
+						"Select lines from start of text.",
+						"Select lines from end of line.",
+						"Select lines from end of text."
+					]
+				},
+				"divide-selection.selectLineTo": {
+					"type": "string",
+					"default": "end-of-line",
+					"enum": [
+						"start-of-line",
+						"start-of-text",
+						"end-of-line",
+						"end-of-text"
+					],
+					"enumDescriptions": [
+						"Select lines to start of line.",
+						"Select lines to start of text.",
+						"Select lines to end of line.",
+						"Select lines to end of text."
+					]
+				}
+			}
 		}
 	},
 	"scripts": {

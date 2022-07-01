@@ -24,13 +24,6 @@ export default function divideByLines(
 			commonLineCount = lastLineNum - firstLineNum + 1,
 			commonCursorCount = tEditor.selections.length;
 
-		console.log(`positions >>`, positions);
-
-		console.log(`firstLineNum >>`, firstLineNum);
-		console.log(`lastLineNum >>`, lastLineNum);
-		console.log(`commonLineCount >>`, commonLineCount);
-		console.log(`commonCursorCount >>`, commonCursorCount);
-
 		if (1 < commonLineCount) {
 			
 			if (1 === commonCursorCount) {
@@ -51,27 +44,18 @@ export default function divideByLines(
 					calcCursorCount: number = commonCursorCount - 1,
 					lineNumbers  : number[] = [];
 				let step: number = Math.ceil(calcLineCount / (calcCursorCount - 1));
-					
-				console.log(`calcLineCount >>`, calcLineCount);
-				console.log(`calcCursorCount >>`, calcCursorCount);
-				console.log(`step >>`, step);
 				
 				for (;step <= calcLineCount; step ++) {
 					if (calcLineCount % step) {continue;} else {break;}
 				}
-				console.log(`step >>`, step);
 
 				for (let i = firstLineNum; i <= lastLineNum; i += step) {
 					lineNumbers.push(i);
 				}
 				lineNumbers.push(lastLineNum);
 				
-				console.log(`lineNumbers >>`, lineNumbers);
-				
 				tEditor.selections = getSelectionsByLines(doc, lineNumbers);
 			}
-			
-			// tEditor.selections = newSelections;
 		} else {
 			vsc.window.showWarningMessage("Fail!");
 		}

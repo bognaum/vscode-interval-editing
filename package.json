@@ -12,7 +12,6 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:divide-selection.divide",
         "onCommand:divide-selection.divideByLines"
 	],
 	"main": "./dist/extension.js",
@@ -26,10 +25,6 @@
 		],
 		"commands": [
 			{
-				"command": "divide-selection.divide",
-				"title": "Divide Selection: divide"
-			},
-			{
 				"command": "divide-selection.divideByLines",
 				"title": "Divide Selection: Divide By Lines"
 			}
@@ -37,7 +32,6 @@
 		
 		"menus": {
 			"editor/title": [
-				{"command": "divide-selection.divide"},
 				{"command": "divide-selection.divideByLines"}
 			]
 		}

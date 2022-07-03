@@ -43,14 +43,14 @@
 					"enum": [
 						"start-of-line",
 						"start-of-text",
-						"end-of-line",
-						"end-of-text"
+						"end-of-text",
+						"end-of-line"
 					],
 					"enumDescriptions": [
 						"Select lines from start of line.",
 						"Select lines from start of text.",
-						"Select lines from end of line.",
-						"Select lines from end of text."
+						"Select lines from end of text.",
+						"Select lines from end of line."
 					]
 				},
 				"interval-editing.selectLineTo": {
@@ -59,14 +59,14 @@
 					"enum": [
 						"start-of-line",
 						"start-of-text",
-						"end-of-line",
-						"end-of-text"
+						"end-of-text",
+						"end-of-line"
 					],
 					"enumDescriptions": [
 						"Select lines to start of line.",
 						"Select lines to start of text.",
-						"Select lines to end of line.",
-						"Select lines to end of text."
+						"Select lines to end of text.",
+						"Select lines to end of line."
 					]
 				}
 			}

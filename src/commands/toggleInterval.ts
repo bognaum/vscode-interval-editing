@@ -14,7 +14,7 @@ export default function toggleInterval(
 		newSelections: vsc.Selection[] = [];
 	
 	tEditor.edit((edit) => {
-		const config = vsc.workspace.getConfiguration('divide-selection', doc.uri);
+		const config = vsc.workspace.getConfiguration('interval-editing', doc.uri);
 		const 
 			positions: number[] = tEditor.selections.reduce((acc,v) => {
 				acc.push(v.start.line);

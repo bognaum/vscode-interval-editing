@@ -4,6 +4,10 @@
 	"description": "Divides a space between first and last cursor to many edit points with equal intervals of lines.",
 	"publisher": "Bognaum",
 	"icon": "IMG/icon-02.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bognaum/vscode-interval-editing.git"
+	},
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.68.0"

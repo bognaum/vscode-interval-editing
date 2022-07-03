@@ -1,6 +1,6 @@
 import * as vsc from "vscode";
 
-export default function divideByLines(
+export default function toggleInterval(
 	tEditor: vsc.TextEditor, 
 	edit: vsc.TextEditorEdit, 
 	...args: any[]

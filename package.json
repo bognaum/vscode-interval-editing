@@ -38,6 +38,7 @@
 			"title": "Interval editing",
 			"properties": {
 				"interval-editing.selectLineFrom": {
+					"description": "Select edited lines from",
 					"type": "string",
 					"default": "end-of-line",
 					"enum": [
@@ -54,6 +55,7 @@
 					]
 				},
 				"interval-editing.selectLineTo": {
+					"description": "Select edited lines to",
 					"type": "string",
 					"default": "end-of-line",
 					"enum": [

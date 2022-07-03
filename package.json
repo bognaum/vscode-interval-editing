@@ -3,7 +3,7 @@
 	"displayName": "Interval editing",
 	"description": "Divides a space between first and last cursor to many edit points with equal intervals of lines.",
 	"publisher": "Bognaum",
-	"icon": "IMG/icon.jpg",
+	"icon": "IMG/icon-02.png",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.68.0"

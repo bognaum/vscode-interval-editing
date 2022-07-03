@@ -10,10 +10,10 @@ To use it You need:
 After each next press the designated interval will be separated to some edit points with increasing step.
 3. Keep clicking until you get a match with needed to edit lines.
 
-![Demo](./IMG/interval-editing-01.gif)
-![Demo](./IMG/interval-editing-04.gif)
-![Demo](./IMG/interval-editing-02.gif)
-![Demo](./IMG/interval-editing-03.gif)
+![Demo](IMG/interval-editing-01.gif)
+![Demo](IMG/interval-editing-04.gif)
+![Demo](IMG/interval-editing-02.gif)
+![Demo](IMG/interval-editing-03.gif)
 
 In the settings **Ctrl+, >> Extensions >> Interval editing** you may set how to select the edited lines:
 - full line
